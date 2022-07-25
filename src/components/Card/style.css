@@ -1,0 +1,86 @@
+.card_container {
+  background-color: var(--gray-1);
+  width: 80%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.3rem;
+  border-radius: 4px;
+}
+.card_title {
+  width: 60%;
+  text-align: start;
+  padding: 15px;
+}
+
+.card_title > span {
+  font-size: 12px;
+  color: var(--gray-3);
+}
+
+.card_title > h3 {
+  margin-bottom: 1rem;
+  margin-top: 0px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card_details {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_details > p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray-4);
+}
+
+.removeCard {
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.trashIcon {
+  width: 100%;
+}
+
+.background-entrada,
+.background-Entrada {
+  background-color: var(--color-secondary);
+  width: 5px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.background-Despesa {
+  background-color: var(--gray-2);
+  width: 5px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.removeCard:hover {
+  background-color: var(--gray-5);
+  color: var(--color-white);
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card_details {
+    flex-direction: column;
+  }
+  .removeCard {
+    margin-top: 10px;
+  }
+}
